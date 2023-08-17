@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(){
+    int size,i;
+    printf("enter your arrays size");
+    scanf("%d",&size);
+    int arr[size];
+    for(i=0;i<size;i++){
+        printf("enter the value");
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<size;i++){
+    printf("%d\t",arr[i]);
+}
+    return 0;
+}
