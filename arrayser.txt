@@ -1,0 +1,24 @@
+#include <stdio.h>
+int find(int a[],int n,int key){
+    for (int i=0;i<n;i++){
+        if(a[i] ==key){
+            return i;
+        }
+    }
+    return -1;
+}
+
+int main() {
+    int i,key,n,postion;
+    int a[]={2,4,1,6,10,8,13,23,9,5};
+        n=sizeof(a)/sizeof(a[0]);
+        key=10;
+        postion=find(a,n,key);
+        if(postion==-1)
+        {
+            printf("element not found");
+        }else
+        {
+            printf("element at found of%d\th postion",postion-1);
+        }
+    }
